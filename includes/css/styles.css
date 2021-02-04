@@ -156,3 +156,143 @@ input[type="number"] {
     border-top: 5px solid transparent;
     top: -10px;
 }
+
+/* Booking Confirmation and Compare */
+.primary-booking {
+    display: block;
+    margin-top: 15px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto auto;
+        align-content: center;
+    }
+    .g-item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 1px solid black;
+    }
+    .g-item2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border: 1px solid black;
+    }
+    .g-item3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border: 1px solid black;
+    }
+    .g-item4 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid black;
+    }
+    .g-item5 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid black;
+    }
+    .min-padding {
+        padding: 0px 5px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 600px) {
+    .grid-container {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        display: grid;
+        border: 1px solid black;
+        grid-template-columns: auto auto auto auto;
+        align-content: center;
+    }
+    .g-item1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid black;
+    }
+    .g-item2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border: 1px solid black;
+    }
+    .g-item3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border: 1px solid black;
+    }
+    .g-item4 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid black;
+    }
+    .g-item5 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid black;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .booking-comfirmation {
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .booking-comfirmation {
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .booking-comfirmation {
+        width: 90%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .booking-comfirmation {
+        width: 90%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .booking-comfirmation {
+        position: relative;
+        width: 90%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
