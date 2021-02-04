@@ -1,0 +1,125 @@
+.body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+.content {
+    width: 100%;
+    margin-top: 30px;
+}
+.wrapper {
+    width: 80%;
+    margin: auto;
+    min-width: 370px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .booking-form {
+        width: 100%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .booking-form {
+        width: 85%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .booking-form {
+        width: 80%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .booking-form {
+        width: 70%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .booking-form {
+        width: 50%;
+        border-radius: 5px;
+        background-color: rgb(211, 211, 211, 0.9);
+        margin: auto;
+        padding: 8px;
+        border: 1px solid gray;
+    }
+}
+/* Form Styles */
+.form-heading {
+    text-align: center;
+}
+.form-subtitle {
+    text-align: center;
+    padding: 0px 15px;
+    width: 90%;
+}
+.form-label {
+    display: block;
+    margin-left: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.form-input {
+    display: block;
+    margin-left: 20px;
+    width: 90%;
+    padding-left: 5px;
+    outline: none;
+    line-height: 2em;
+    border: 2px solid rgb(124, 202, 228);
+}
+.form-input-text {
+    padding: 5px;
+}
+.form-input-select {
+    padding: 5px;
+}
+.form-submit {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0px 15px 20px;
+    padding: 12px;
+    width: 90%;
+    border-radius: 5px;
+    border: 2px solid rgb(124, 202, 228);
+    background-color: rgb(124, 202, 228);
+}
+.form-submit:hover {
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Remove Scroll */
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

@@ -2,14 +2,50 @@
     <head>
         <meta >
         <title>OOP Booking Application</title>
-        <link rel="css/stylesheet" href="includes/css/styles.css" >
+        <link rel="stylesheet" href="includes/css/styles.css" >
     </head>
-    <body>
-        <h1>Hotel Booking App</h1>
-
-        
-    
-    
+    <body class="body">
+        <div class="content">
+            <div class="wrapper">
+                <div class="booking-form">
+                    <h1 class="form-heading">Hotel Booking App</h1>
+                    <p class="form-subtitle">Use our free booking app to do a quick comparison between hotel accomidation 
+                        and find the best price available for the nominated night stay.
+                    </p>
+                    <form action="" method="POST">
+                        <label for="firstname" class="form-label">First Name</label>
+                        <input type="text" class="form-input form-input-text" id="firstname" value="">
+                        <label for="lastname" class="form-label">Last Name</label>
+                        <input type="text" class="form-input form-input-text" id="lastname" value="">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-input form-input-text" id="email" value="">
+                        <label for="checkin" class="form-label">Check In</label>
+                        <input type="date" class="form-input" id="checkin" value="">
+                        <label for="checkout" class="form-label">Check Out</label>
+                        <input type="date" class="form-input" id="checkout" value="">
+                        <label for="hotel" class="form-label">Select your prefered hotel below</label>
+                        <select id="hotel" class="form-input form-input-select">
+                            <option class="form-input-select" value="">Hotel 1</option>
+                            <option class="form-input-select" value="">Hotel 2</option>
+                            <option class="form-input-select" value="">Hotel 3</option>
+                        </select>
+                        <label for="num-days" class="form-label">Number of Days</label>
+                        <input type="number" class="form-input form-input-text" id="num-days" value="">
+                        <input type="submit" class="form-submit" name="submit" value="Book Now" >
+                    </form>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     <script src="includes/js/scripts.js"></script>
     </body>
 </html>
