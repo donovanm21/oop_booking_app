@@ -158,88 +158,6 @@ input[type="number"] {
 }
 
 /* Booking Confirmation and Compare */
-.primary-booking {
-    display: block;
-    margin-top: 15px;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-    .grid-container {
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-        display: grid;
-        border: 1px solid black;
-        grid-template-columns: auto auto auto auto;
-        align-content: center;
-    }
-    .g-item1 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        border: 1px solid black;
-    }
-    .g-item2 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        border: 1px solid black;
-    }
-    .g-item3 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        border: 1px solid black;
-    }
-    .g-item4 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid black;
-    }
-    .g-item5 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid black;
-    }
-    .min-padding {
-        padding: 0px 5px;
-    }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 600px) {
-    .grid-container {
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-        display: grid;
-        border: 1px solid black;
-        grid-template-columns: auto auto auto auto;
-        align-content: center;
-    }
-    .g-item1 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid black;
-    }
-    .g-item2 {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        border: 1px solid black;
-    }
-    .g-item3 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        border: 1px solid black;
-    }
-    .g-item4 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid black;
-    }
-    .g-item5 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid black;
-    }
-}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .booking-comfirmation {
@@ -294,5 +212,118 @@ input[type="number"] {
         margin: auto;
         padding: 8px;
         border: 1px solid gray;
+    }
+}
+.primary-booking {
+    display: block;
+    margin-top: 15px;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        display: grid;
+        border: 1px solid rgb(124, 202, 228);
+        background-color: white;
+        grid-template-columns: auto auto auto auto;
+        align-content: center;
+    }
+    .g-item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+    }
+    .g-item2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+    }
+    .g-item3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+    }
+    .g-item4 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+    }
+    .g-item5 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+    }
+    .min-padding {
+       padding: 0px 5px;
+    }
+    .hotel-logo {
+        display: none;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 600px) {
+    .grid-container {
+        width: 100%;
+        align-content: center;
+        text-align: center;
+        font-weight: bold;
+        display: grid;
+        border: 1px solid rgb(124, 202, 228);
+        border-bottom: 2px solid rgb(124, 202, 228);
+        border-right: 2px solid rgb(124, 202, 228);
+        background-color: white;
+        grid-template-columns: auto auto auto auto;
+    }
+    .g-item1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+    }
+    .g-item2 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border: 1px solid rgb(124, 202, 228);
+        text-align: left;
+        padding-top: 22px;
+        padding-left: 10px;
+        font-size: 1.6em;
+    }
+    .g-item3 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+        text-align: left;
+        padding-top: 22px;
+        padding-left: 10px;
+        font-size: 1.6em;
+    }
+    .g-item4 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+    }
+    .g-item5 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid rgb(124, 202, 228);
+    }
+    .book-button {
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+    .hotel-logo {
+        width: 100px;
+        margin-top: 10px;
+    }
+    .total-amount {
+        font-size: 1.2em;
+    }
+    .rate {
+        color: rgb(11, 169, 221);
+    }
+    .days {
+        color: rgb(11, 169, 221);
     }
 }
