@@ -57,7 +57,7 @@ if($_POST) {
                         </select>
                         <label for="num-days" class="form-label">Number of Days</label>
                         <input type="number" name="days" class="form-input form-input-text form-input-number" id="num-days">
-                        <input type="submit" class="form-submit" name="submit" value="Compare Now" >
+                        <input type="submit" class="form-submit" name="submit" value="Find My Booking" >
                     </form>
                 </div>
                 <div></div>
