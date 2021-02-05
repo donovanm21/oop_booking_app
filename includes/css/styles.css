@@ -274,7 +274,7 @@ input[type="number"] {
         border-bottom: 2px solid rgb(124, 202, 228);
         border-right: 2px solid rgb(124, 202, 228);
         background-color: white;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto 300px auto;
     }
     .g-item1 {
         grid-row-start: 1;
@@ -302,6 +302,7 @@ input[type="number"] {
     .g-item4 {
         grid-row-start: 1;
         grid-row-end: 3;
+        padding: 12px;
         border: 1px solid rgb(124, 202, 228);
     }
     .g-item5 {
