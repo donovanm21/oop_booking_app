@@ -8,6 +8,10 @@ function arrayItem($array){
         echo $a . ", ";
     }
 }
+// Site root
+function root() {
+    header("Location: index.php");
+}
 
 // Hotel class object
 class Hotel {
