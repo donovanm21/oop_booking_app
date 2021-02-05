@@ -9,7 +9,7 @@ function arrayItem($array){
     }
 }
 // Site root
-function root() {
+function siteroot() {
     header("Location: index.php");
 }
 

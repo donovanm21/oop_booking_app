@@ -66,9 +66,9 @@ $days = $_SESSION['days'];
                         </div>
                     </div>
                     <?php } $i++; } while($i <= $obj_len); ?>
-                    <button class="home-button" onclick="<?php root(); ?>">Home Page</button>
-                </div>
-                <div>
+                    <div class="home-button-div">
+                        <a href="index.php"><button class="home-button">Home Page</button></a>
+                    </div>
                 </div>
                 <div></div>
                 <div></div>
