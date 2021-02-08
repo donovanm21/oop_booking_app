@@ -45,9 +45,10 @@ if($_POST['days'] != '' && $_POST['days'] != 0) {
                         <label for="email" class="form-label">Email</label>
                         <input type="text" name="email" class="form-input form-input-text" id="email" oninput="inputError(this.id);" value="<?php if($_SESSION['email'] != ""){ echo $_SESSION['email'];} ?>">
                         <label for="checkin" class="form-label">Check In</label>
-                        <input type="date" class="form-input" id="checkin">
+                        <input type="date" class="form-input" id="checkin" oninput="checkinDate();">
+                        <p class="error-bubble hidden" id="checkin-error">Please correct the date selection</p>
                         <label for="checkout" class="form-label">Check Out</label>
-                        <input type="date" class="form-input" id="checkout" oninput="totalDays();">
+                        <input type="date" class="form-input" id="checkout" oninput="totalDays(); checkoutDate();">
                         <p class="error-bubble hidden" id="date-error">Please correct the date selection</p>
                         <label for="region" class="form-label">Select your region</label>
                         <select id="region" name="location" class="form-input form-input-select">
