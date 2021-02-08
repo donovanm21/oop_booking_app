@@ -16,6 +16,7 @@ foreach($data as $row) {
     ${"hotel" . $id} = new Hotel();
     ${"hotel" . $id}->set_data($id, $name, $location, $rate, $info);
 }
+
 // Set SESSION variables
 $firstname = $_SESSION['firstname'];
 $lastname = $_SESSION['lastname'];
@@ -42,7 +43,6 @@ $days = $_SESSION['days'];
                     <h2 class="form-heading">Comparitive Bookings for <?php print($form_location); ?></h2>
                     <?php $i = 1; do {$get_location = ${'hotel' . $i}->get_location(); if($form_location == $get_location) { ?>
                     <div class="primary-booking grid-container">
-                        <div class="hidden" id="hotel-id"><?php print(${'hotel' . $i}->get_id());?></div>
                         <div class="g-item1">
                             <img src="includes/img/hotel_logo.jpg" class="hotel-logo" alt="Hotel Logo">
                             <p class="min-padding"><?php print(${'hotel' . $i}->get_name());?></p>
@@ -62,7 +62,7 @@ $days = $_SESSION['days'];
                         <div class="g-item5">
                             <p class="min-padding">Total Amount</p>
                             <p class="total-amount">R<?php print(${'hotel' . $i}->get_rate()*$days);?></p>
-                            <button class="book-button" onclick="confirm('Confirm booking?');">Book Now</button>
+                            <a href="mail.php?id=<?php print(${'hotel' . $i}->get_id());?>"><button class="book-button" onclick="confirm('Confirm booking?');">Book Now</button></a>
                         </div>
                     </div>
                     <?php } $i++; } while($i <= $obj_len); ?>

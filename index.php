@@ -4,7 +4,7 @@ session_start();
 // Include the functions and config file
 require_once('functions.php');
 
-if($_POST) { 
+if($_POST['days'] != '' && $_POST['days'] != 0) { 
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
@@ -39,11 +39,11 @@ if($_POST) {
                     </p>
                     <form action="index.php" method="post">
                         <label for="firstname" class="form-label">First Name</label>
-                        <input type="text" name="firstname" class="form-input form-input-text" id="firstname" oninput="inputError(this.id);">
+                        <input type="text" name="firstname" class="form-input form-input-text" id="firstname" oninput="inputError(this.id);" value="<?php if($_SESSION['firstname'] != ""){ echo $_SESSION['firstname'];} ?>">
                         <label for="lastname" class="form-label">Last Name</label>
-                        <input type="text" name="lastname" class="form-input form-input-text" id="lastname" oninput="inputError(this.id);">
+                        <input type="text" name="lastname" class="form-input form-input-text" id="lastname" oninput="inputError(this.id);" value="<?php if($_SESSION['lastname'] != ""){ echo $_SESSION['lastname'];} ?>">
                         <label for="email" class="form-label">Email</label>
-                        <input type="text" name="email" class="form-input form-input-text" id="email" oninput="inputError(this.id);">
+                        <input type="text" name="email" class="form-input form-input-text" id="email" oninput="inputError(this.id);" value="<?php if($_SESSION['email'] != ""){ echo $_SESSION['email'];} ?>">
                         <label for="checkin" class="form-label">Check In</label>
                         <input type="date" class="form-input" id="checkin">
                         <label for="checkout" class="form-label">Check Out</label>

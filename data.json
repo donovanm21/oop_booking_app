@@ -1,63 +1,63 @@
 [
     {
         "id": 1,
-        "name": "Hotel 1",
+        "name": "Road Lodge",
         "location": "Cape Town",
         "rate": "350",
         "info": ["WiFi", "Child Friendly", "Bar"]
     },
     {
         "id": 2,
-        "name": "Hotel 2",
+        "name": "City Lodge",
         "location": "Johannesburg",
         "rate": "450",
         "info": ["Pool", "WiFi", "Car Rentals", "Bar"]
     },
     {
         "id": 3,
-        "name": "Hotel 3",
+        "name": "Hylton",
         "location": "Cape Town",
         "rate": "550",
         "info": ["Pool", "WiFi", "Child Friendly", "Bar"]
     },
     {
         "id": 4,
-        "name": "Hotel 4",
+        "name": "Hylton",
         "location": "Durban",
         "rate": "600",
         "info": ["Pool", "WiFi", "Car Rentals", "Child Friendly", "Bar", "Local Tours"]
     },
     {
         "id": 5,
-        "name": "Hotel 5",
+        "name": "City Lodge",
         "location": "Durban",
         "rate": "320",
         "info": ["Pool", "WiFi", "Car Rentals", "Bar"]
     },
     {
         "id": 6,
-        "name": "Hotel 6",
+        "name": "Road Lodge",
         "location": "Johannesburg",
         "rate": "380",
         "info": ["WiFi", "Child Friendly", "Bar"]
     },
     {
         "id": 7,
-        "name": "Hotel 7",
+        "name": "Radison",
         "location": "Durban",
         "rate": "480",
         "info": ["Pool", "WiFi", "Child Friendly", "Bar"]
     },
     {
         "id": 8,
-        "name": "Hotel 8",
+        "name": "V&A Waterfront",
         "location": "Cape Town",
         "rate": "480",
         "info": ["Pool", "WiFi", "Child Friendly", "Bar"]
     },
     {
         "id": 9,
-        "name": "Hotel 9",
+        "name": "Sandton City",
         "location": "Johannesburg",
         "rate": "700",
         "info": ["Pool", "WiFi", "Car Rentals", "Child Friendly", "Bar", "Local Tours"]
