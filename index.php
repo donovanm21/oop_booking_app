@@ -60,20 +60,7 @@ if($_POST) {
                         <input type="submit" class="form-submit" name="submit" value="Find My Booking" >
                     </form>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
             </div>
         </div>
-    
-    <script>
-    </script>
     </body>
 </html>

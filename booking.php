@@ -62,26 +62,15 @@ $days = $_SESSION['days'];
                         <div class="g-item5">
                             <p class="min-padding">Total Amount</p>
                             <p class="total-amount">R<?php print(${'hotel' . $i}->get_rate()*$days);?></p>
-                            <button class="book-button">Book Now</button>
+                            <button class="book-button" onclick="confirm('Confirm booking?');">Book Now</button>
                         </div>
                     </div>
                     <?php } $i++; } while($i <= $obj_len); ?>
                     <div class="home-button-div">
-                        <a href="index.php"><button class="home-button">Home Page</button></a>
+                        <a href="index.php"><button class="home-button">Back To Search</button></a>
                     </div>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
             </div>
         </div>
-    
-    <script>
-    </script>
     </body>
 </html>
