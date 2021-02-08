@@ -39,15 +39,15 @@ if($_GET['id'] != null) {
         //Server settings
         //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
-        $mail->Host       = 'smtp.ydev.co.za';
+        $mail->Host       = 'smtp.example.co.za';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'bookings@ydev.co.za';
-        $mail->Password   = 'x9BPb2KaDumJSXMr';
+        $mail->Username   = 'bookings@example.co.za';
+        $mail->Password   = 'yourpassword';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         //Recipients
-        $mail->setFrom('bookings@ydev.co.za', 'Hotel Bookings');
+        $mail->setFrom('bookings@example.co.za', 'Hotel Bookings');
         $mail->addAddress($email);
 
         // Content
