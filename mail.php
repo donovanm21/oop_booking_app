@@ -39,7 +39,7 @@ if($_GET['id'] != null) {
         //Server settings
         //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->isSMTP();
-        $mail->Host       = 'smtp.example.co.za';
+        $mail->Host       = 'smtp.ydev.co.za';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'bookings@example.co.za';
         $mail->Password   = 'yourpassword';
