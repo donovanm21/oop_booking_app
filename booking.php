@@ -56,7 +56,7 @@ $days = $_SESSION['days'];
                     <div class="home-button-div">
                         <a href="index.php" class="no-styles"><button class="home-button">Back To Search</button></a>
                     </div>
-                    <a href="logout.php" class="no-styles"><button type="button" class="logout-button-booking">Logout</button></a>
+                    <a href="logout.php" class="no-styles"><button type="button" class="logout-button-booking">Sign Out</button></a>
                 </div>
             </div>
         </div>

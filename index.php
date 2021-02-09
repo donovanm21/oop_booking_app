@@ -59,7 +59,7 @@ if($_POST['days'] != '' && $_POST['days'] != 0) {
                         <label for="num-days" class="form-label">Number of Days</label>
                         <input type="number" name="days" class="form-input form-input-text form-input-number" id="num-days">
                         <input type="submit" class="form-submit" name="submit" value="Find My Booking" >
-                        <a href="logout.php" class="no-styles"><button type="button" class="logout-button">Logout</button></a>
+                        <a href="logout.php" class="no-styles"><button type="button" class="logout-button">Sign Out</button></a>
                     </form>
                 </div>
             </div>
