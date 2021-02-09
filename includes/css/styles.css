@@ -21,7 +21,7 @@
     .booking-form {
         width: 100%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.2);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
     }
@@ -412,4 +412,21 @@ input[type="number"] {
 }
 .no-styles {
     text-decoration: none;
+}
+.logout-button-booking {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin: 15px auto 15px auto;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+    background-color: lightcoral;
+    border: 2px solid lightcoral;
+}
+.logout-button-booking:hover {
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
 }
