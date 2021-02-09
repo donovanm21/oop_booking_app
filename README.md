@@ -9,6 +9,7 @@ Things to change in order to get the app working 100%. Once setup you can use al
 - Open the mail.php file and edit the below sections to reflect your smtp server details.
 
 ``` 
+<?php 
 $mail->Host       = 'smtp.example.co.za';
 $mail->Username   = 'bookings@example.co.za';
 $mail->Password   = 'yourpassword';
@@ -17,6 +18,7 @@ $mail->Port       = 587;
 //Recipients
 $mail->setFrom('bookings@example.co.za', 'Hotel Bookings');
 $mail->addAddress('manager@example.co.za'); // Email address for receiving the booking cofirmation (Your email)
+?>
 ```
 
 ## ToDo
