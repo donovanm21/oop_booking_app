@@ -2,6 +2,7 @@
 function totalDays() {
     const oneDay=1000*60*60*24;
     let currentDate = new Date();
+    let checkDate = currentDate - oneDay;
     let checkin = new Date(document.getElementById('checkin').value);
     let checkout = new Date(document.getElementById('checkout').value);
     let days = (checkout - checkin) / oneDay;
@@ -12,7 +13,7 @@ function totalDays() {
         document.getElementById('date-error').classList.add('hidden');
         document.getElementById('num-days').value = days;
     }
-    if(checkin < currentDate || checkout < currentDate) {
+    if(checkin < checkDate || checkout < checkDate) {
         document.getElementById('date-error').classList.remove('hidden');
         document.getElementById('num-days').value = 0;
     } else {
@@ -22,9 +23,11 @@ function totalDays() {
 }
 // Check that date is past current date for check in
 function checkinDate() {
+    const oneDay=1000*60*60*24;
     let currentDate = new Date();
+    let checkDate = currentDate - oneDay;
     let checkin = new Date(document.getElementById('checkin').value);
-    if(checkin < currentDate) {
+    if(checkin < checkDate) {
         document.getElementById('checkin-error').classList.remove('hidden');
     } else {
         document.getElementById('checkin-error').classList.add('hidden');
@@ -32,9 +35,11 @@ function checkinDate() {
 }
 // Check that date is past current date for check out
 function checkoutDate() {
+    const oneDay=1000*60*60*24;
     let currentDate = new Date();
+    let checkDate = currentDate - oneDay;
     let checkout = new Date(document.getElementById('checkout').value);
-    if(checkout < currentDate) {
+    if(checkout < checkDate) {
         document.getElementById('date-error').classList.remove('hidden');
     } else {
         document.getElementById('date-error').classList.add('hidden');
