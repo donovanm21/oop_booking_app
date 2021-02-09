@@ -1,7 +1,7 @@
 .body {
     background-image: url("../img/bg.jpg");
     background-size: cover;
-    font-family: sans-serif;
+    font-family: 'Merriweather', serif;
     margin: 0;
 }
 .content {

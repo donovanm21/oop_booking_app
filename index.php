@@ -26,6 +26,8 @@ if($_POST['days'] != '' && $_POST['days'] != 0) {
     <head>
         <meta >
         <title>OOP Booking Application</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="includes/css/styles.css" >
         <script src="includes/js/scripts.js"></script>
     </head>
