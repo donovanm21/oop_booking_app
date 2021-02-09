@@ -352,7 +352,6 @@ input[type="number"] {
 }
 .signin-label {
     display: block;
-    margin-left: 20px;
     font-size: 1.1em;
     font-weight: bold;
     padding: 10px 0px;
