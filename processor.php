@@ -2,6 +2,11 @@
 // Include the functions and config file
 require_once('functions.php');
 
+// Check if user is signed in
+if(!$_SESSION['signed-in']) {
+    header("Location: login.php");
+}
+
 // Location array
 $location_array = array();
 // Create Hotel instances of each hotel

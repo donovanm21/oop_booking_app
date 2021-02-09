@@ -21,10 +21,9 @@
     .booking-form {
         width: 100%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgb(211, 211, 211, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -32,10 +31,9 @@
     .booking-form {
         width: 85%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -43,10 +41,9 @@
     .booking-form {
         width: 80%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -54,10 +51,9 @@
     .booking-form {
         width: 70%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -66,36 +62,39 @@
         position: relative;
         width: 50%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Form Styles */
 .form-heading {
     text-align: center;
+    color: white;
 }
 .form-subtitle {
     text-align: center;
-    padding: 0px 15px;
+    padding: 10px 15px;
+    margin: auto;
     width: 90%;
+    color: white;
 }
 .form-label {
     display: block;
-    margin-left: 20px;
+    margin-left: 5%;
     font-size: 1.1em;
     font-weight: bold;
     padding: 10px 0px;
+    color: white;
 }
 .form-input {
     display: block;
-    margin-left: 20px;
+    margin: auto;
     width: 90%;
     padding-left: 5px;
     outline: none;
     line-height: 2em;
-    border: 2px solid rgb(124, 202, 228);
+    border: 2px solid #0276c8;
 }
 .form-input-text {
     padding: 5px;
@@ -106,12 +105,13 @@
 .form-submit {
     text-align: center;
     font-weight: bold;
-    margin: 15px 0px 15px 20px;
-    padding: 12px;
+    display: block;
+    margin: 15px auto 15px auto;
+    padding: 15px;
     width: 90%;
     border-radius: 5px;
-    border: 2px solid rgb(124, 202, 228);
-    background-color: rgb(124, 202, 228);
+    border: 2px solid #0276c8;
+    background-color: #0276c8;
 }
 .form-submit:hover {
     border: 2px solid white;
@@ -163,10 +163,9 @@ input[type="number"] {
     .booking-comfirmation {
         width: 100%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -174,10 +173,9 @@ input[type="number"] {
     .booking-comfirmation {
         width: 100%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -185,10 +183,9 @@ input[type="number"] {
     .booking-comfirmation {
         width: 90%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -196,10 +193,9 @@ input[type="number"] {
     .booking-comfirmation {
         width: 90%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -208,10 +204,9 @@ input[type="number"] {
         position: relative;
         width: 90%;
         border-radius: 5px;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
-        border: 1px solid gray;
     }
 }
 .primary-booking {
@@ -331,15 +326,90 @@ input[type="number"] {
 .home-button {
     text-align: center;
     font-weight: bold;
-    margin: 15px 0px 15px 0px;
-    padding: 12px;
+    display: block;
+    margin: 15px auto 15px auto;
+    padding: 15px;
     width: 100%;
     border-radius: 5px;
-    border: 2px solid rgb(124, 202, 228);
-    background-color: rgb(124, 202, 228);
+    border: 2px solid #0276c8;
+    background-color: #0276c8;
 }
 .home-button:hover {
     border: 2px solid white;
     cursor: pointer;
     border-radius: 5px;
+}
+/* Sign in section */
+.signin-heading {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.signin-subtitle {
+    text-align: center;
+    padding: 0px 15px;
+    color: white;
+}
+.signin-label {
+    display: block;
+    margin-left: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: center;
+    color: white;
+}
+.signin-input {
+    display: block;
+    margin: auto;
+    width: 300px;
+    padding-left: 5px;
+    outline: none;
+    line-height: 2em;
+    border: 2px solid #0276c8;
+    text-align: center;
+    font-weight: bold;
+}
+.form-input-text {
+    padding: 5px;
+}
+.form-input-select {
+    padding: 5px;
+}
+.signin-submit {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 12px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #0276c8;
+    background-color: #0276c8;
+    color: white;
+}
+.signin-submit:hover {
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.logout-button {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin: 15px auto 15px auto;
+    padding: 15px;
+    width: 90%;
+    border-radius: 5px;
+    color: black;
+    background-color: lightcoral;
+    border: 2px solid lightcoral;
+}
+.logout-button:hover {
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.no-styles {
+    text-decoration: none;
 }
