@@ -50,5 +50,3 @@ function inputError(id){
         document.getElementById(id).classList.remove('error-input');
     }
 }
-
-// Add to date to check that the date is not prior to the current date.

@@ -2,7 +2,7 @@
 // Start a session
 session_start();
 // Include the functions and config file
-require_once('functions.php');
+require_once('processor.php');
 
 if($_POST['days'] != '' && $_POST['days'] != 0) { 
     $firstname = $_POST['firstname'];
@@ -52,9 +52,9 @@ if($_POST['days'] != '' && $_POST['days'] != 0) {
                         <p class="error-bubble hidden" id="date-error">Please correct the date selection</p>
                         <label for="region" class="form-label">Select your region</label>
                         <select id="region" name="location" class="form-input form-input-select">
-                            <option class="form-input-select" value="Cape Town">Cape Town</option>
-                            <option class="form-input-select" value="Johannesburg">Johannesburg</option>
-                            <option class="form-input-select" value="Durban">Durban</option>
+                            <?php foreach($location_array as $l) { ?>
+                            <option class="form-input-select" value="<?php print($l); ?>"><?php print($l); ?></option>
+                            <?php }; ?>
                         </select>
                         <label for="num-days" class="form-label">Number of Days</label>
                         <input type="number" name="days" class="form-input form-input-text form-input-number" id="num-days">
