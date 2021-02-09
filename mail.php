@@ -48,6 +48,7 @@ if($_GET['id'] != null) {
 
         //Recipients
         $mail->setFrom('bookings@example.co.za', 'Hotel Bookings');
+        $mail->addAddress('manager@example.co.za'); // Email address for receiving the booking cofirmation (Your email)
         $mail->addAddress($email);
 
         // Content
