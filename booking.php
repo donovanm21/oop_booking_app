@@ -45,11 +45,11 @@ $days = $_SESSION['days'];
                             <span class="rate">R<?php print(${'hotel' . $i}->get_rate());?> p/d</span>
                         </div>
                         <div class="g-item4">
-                            <p class="min-padding">Additional Info</p>
+                            <p class="min-padding"><u>Additional Info</u></p>
                             <p class="min-padding"><?php $hotel_info = ${'hotel' . $i}->get_info(); foreach($hotel_info as $x){echo $x . ', ';} echo 'Restaurant';?></p>
                         </div>
                         <div class="g-item5">
-                            <p class="min-padding">Total Amount</p>
+                            <p class="min-padding"><u>Total Amount</u></p>
                             <p class="total-amount">R<?php print(${'hotel' . $i}->get_rate()*$days);?></p>
                             <a href="mail.php?id=<?php print(${'hotel' . $i}->get_id());?>"><button class="book-button" onclick="confirm('Confirm booking?');">Book Now</button></a>
                         </div>

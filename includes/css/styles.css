@@ -220,7 +220,7 @@ input[type="number"] {
         text-align: center;
         font-weight: bold;
         display: grid;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
         background-color: white;
         grid-template-columns: auto auto auto auto;
         align-content: center;
@@ -228,27 +228,27 @@ input[type="number"] {
     .g-item1 {
         grid-column-start: 1;
         grid-column-end: 3;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
     }
     .g-item2 {
         grid-row-start: 2;
         grid-row-end: 3;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
     }
     .g-item3 {
         grid-row-start: 2;
         grid-row-end: 3;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
     }
     .g-item4 {
         grid-row-start: 1;
         grid-row-end: 3;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
     }
     .g-item5 {
         grid-row-start: 1;
         grid-row-end: 3;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
     }
     .min-padding {
        padding: 0px 5px;
@@ -265,21 +265,19 @@ input[type="number"] {
         text-align: center;
         font-weight: bold;
         display: grid;
-        border: 1px solid rgb(124, 202, 228);
-        border-bottom: 2px solid rgb(124, 202, 228);
-        border-right: 2px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
         background-color: white;
         grid-template-columns: auto auto 300px auto;
     }
     .g-item1 {
         grid-row-start: 1;
         grid-row-end: 3;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
     }
     .g-item2 {
         grid-row-start: 1;
         grid-row-end: 2;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
         text-align: left;
         padding-top: 22px;
         padding-left: 10px;
@@ -288,7 +286,7 @@ input[type="number"] {
     .g-item3 {
         grid-row-start: 2;
         grid-row-end: 3;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
         text-align: left;
         padding-top: 22px;
         padding-left: 10px;
@@ -298,16 +296,24 @@ input[type="number"] {
         grid-row-start: 1;
         grid-row-end: 3;
         padding: 12px;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
     }
     .g-item5 {
         grid-row-start: 1;
         grid-row-end: 3;
-        border: 1px solid rgb(124, 202, 228);
+        border: 1px solid #0276c8;
     }
     .book-button {
         margin-bottom: 20px;
-        padding: 5px;
+        padding: 8px;
+        background-color: #0276c8;
+        color: white;
+        border: 2px solid #0276c8;
+        border-radius: 5px;
+    }
+    .book-button:hover {
+        border: 2px solid black;
+        cursor: pointer;
     }
     .hotel-logo {
         width: 100px;
@@ -317,10 +323,10 @@ input[type="number"] {
         font-size: 1.2em;
     }
     .rate {
-        color: rgb(11, 169, 221);
+        color: #0276c8;
     }
     .days {
-        color: rgb(11, 169, 221);
+        color: #0276c8;
     }
 }
 .home-button {
