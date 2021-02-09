@@ -134,10 +134,10 @@ if($_GET['id'] != null) {
                     <!-- Thanks you -->
                     <h1 class="form-heading">Thank You for booking with use</h1>
                     <div class="home-button-div">
-                        <a href="index.php"><button class="home-button">Back To Search</button></a>
+                        <a href="index.php" class="no-styles"><button class="home-button">Back To Search</button></a>
                     </div>
-                    <!-- Refresh page in 5 seconds and reload index -->
-                    <meta http-equiv="refresh" content="5; url=index.php">
+                    <!-- Refresh page in 10 seconds and reload index -->
+                    <meta http-equiv="refresh" content="10; url=index.php">
                 </div>
             </div>
         </div>
