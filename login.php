@@ -25,6 +25,7 @@ if($_POST['firstname'] != '' && $_POST['email'] != '') {
     <head>
         <meta >
         <title>OOP Booking Application</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
         <link rel="stylesheet" href="includes/css/styles.css" >
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
