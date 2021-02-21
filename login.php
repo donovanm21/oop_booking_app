@@ -35,13 +35,13 @@ if($_POST['firstname'] != '' && $_POST['email'] != '') {
         <div class="content">
             <div class="wrapper">
                 <div class="signin-form">
-                    <h1 class="signin-heading">Hotel Booking App</h1>
+                    <h1 class="signin-heading title-font">Hotel Booking App</h1>
                     <p class="signin-subtitle">Please sign in below
                     </p>
                     <form action="login.php" method="post">
-                        <label for="firstname" class="signin-label">First Name</label>
+                        <label for="firstname" class="signin-label title-font">First Name</label>
                         <input type="text" name="firstname" class="signin-input form-input-text" id="firstname" oninput="inputError(this.id);" >
-                        <label for="email" class="signin-label">Email</label>
+                        <label for="email" class="signin-label title-font">Email</label>
                         <input type="text" name="email" class="signin-input form-input-text" id="email" oninput="inputError(this.id);" >
                         <input type="submit" class="signin-submit" name="submit" value="Sign In" >
                     </form>

@@ -36,30 +36,30 @@ if($_POST['days'] != '' && $_POST['days'] != 0) {
         <div class="content">
             <div class="wrapper">
                 <div class="booking-form">
-                    <h1 class="form-heading">Hotel Booking App</h1>
+                    <h1 class="form-heading title-font">Hotel Booking App</h1>
                     <p class="form-subtitle">Use our free booking app to do a quick comparison between hotel accomidation 
                         and find the best price available for the nominated night stay.
                     </p>
                     <form action="index.php" method="post">
-                        <label for="firstname" class="form-label">First Name</label>
+                        <label for="firstname" class="form-label title-font">First Name</label>
                         <input type="text" name="firstname" class="form-input form-input-text" id="firstname" oninput="inputError(this.id);" value="<?php if($_SESSION['firstname'] != ""){ echo $_SESSION['firstname'];} ?>">
-                        <label for="lastname" class="form-label">Last Name</label>
+                        <label for="lastname" class="form-label title-font">Last Name</label>
                         <input type="text" name="lastname" class="form-input form-input-text" id="lastname" oninput="inputError(this.id);" value="<?php if($_SESSION['lastname'] != ""){ echo $_SESSION['lastname'];} ?>">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label title-font">Email</label>
                         <input type="text" name="email" class="form-input form-input-text" id="email" oninput="inputError(this.id);" value="<?php if($_SESSION['email'] != ""){ echo $_SESSION['email'];} ?>">
-                        <label for="checkin" class="form-label">Check In</label>
+                        <label for="checkin" class="form-label title-font">Check In</label>
                         <input type="date" class="form-input" id="checkin" oninput="checkinDate();">
                         <p class="error-bubble hidden" id="checkin-error">Please correct the date selection</p>
-                        <label for="checkout" class="form-label">Check Out</label>
+                        <label for="checkout" class="form-label title-font">Check Out</label>
                         <input type="date" class="form-input" id="checkout" oninput="totalDays(); checkoutDate();">
                         <p class="error-bubble hidden" id="date-error">Please correct the date selection</p>
-                        <label for="region" class="form-label">Select your region</label>
+                        <label for="region" class="form-label title-font">Select your region</label>
                         <select id="region" name="location" class="form-input form-input-select">
                             <?php foreach($location_array as $l) { ?>
                             <option class="form-input-select" value="<?php print($l); ?>"><?php print($l); ?></option>
                             <?php }; ?>
                         </select>
-                        <label for="num-days" class="form-label">Number of Days</label>
+                        <label for="num-days" class="form-label title-font">Number of Days</label>
                         <input type="number" name="days" class="form-input form-input-text form-input-number" id="num-days">
                         <input type="submit" class="form-submit" name="submit" value="Find My Booking" >
                         <a href="logout.php" class="no-styles"><button type="button" class="logout-button">Sign Out</button></a>

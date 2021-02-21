@@ -98,6 +98,7 @@
     outline: none;
     line-height: 2em;
     border: 2px solid #0276c8;
+    border-radius: 5px;
 }
 .form-input-text {
     padding: 5px;
@@ -170,7 +171,11 @@ input[type="number"] {
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
-        padding: 8px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -181,6 +186,11 @@ input[type="number"] {
         background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -191,6 +201,11 @@ input[type="number"] {
         background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -201,6 +216,11 @@ input[type="number"] {
         background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -212,6 +232,11 @@ input[type="number"] {
         background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
         padding: 8px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 .primary-booking {
@@ -221,92 +246,104 @@ input[type="number"] {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
     .grid-container {
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-        display: grid;
-        border: 1px solid #0276c8;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         background-color: white;
-        grid-template-columns: auto auto auto auto;
-        align-content: center;
     }
     .g-item1 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        border: 1px solid #0276c8;
+        flex-grow: 2;
+        text-align: center;
     }
     .g-item2 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        border: 1px solid #0276c8;
+        flex-grow: 2;
+        position: relative;
+        text-align: center;
     }
     .g-item3 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        border: 1px solid #0276c8;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .g-item3 div {
+        border-top: 4px solid #0276c8;
+        border-radius: 5px;
+        width: 50px;
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .g-item4 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid #0276c8;
+        flex-grow: 1;
+        text-align: center;
     }
     .g-item5 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid #0276c8;
+        flex-grow: 1;
+        text-align: center;
+        margin-bottom: 40px;
     }
     .min-padding {
        padding: 0px 5px;
     }
-    .hotel-logo {
-        display: none;
+    .book-button {
+        margin-bottom: 20px;
+        padding: 8px;
+        background-color: #4CAF50;
+        color: white;
+        border: 2px solid #4CAF50;
+        border-radius: 5px;
+    }
+    .book-button:hover {
+        border: 2px solid black;
+        cursor: pointer;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 600px) {
     .grid-container {
-        width: 100%;
-        align-content: center;
-        text-align: center;
-        font-weight: bold;
-        display: grid;
-        border: 1px solid #0276c8;
+        display: flex;
         background-color: white;
-        grid-template-columns: auto auto 300px auto;
     }
     .g-item1 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid #0276c8;
+        flex-grow: 2;
+        text-align: center;
+        margin-left: -80px;
     }
     .g-item2 {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        border: 1px solid #0276c8;
-        text-align: left;
-        padding-top: 22px;
-        padding-left: 10px;
-        font-size: 1.6em;
+        flex-grow: 2;
+        position: relative;
+    }
+    .g-item2 span {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
     }
     .g-item3 {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        border: 1px solid #0276c8;
-        text-align: left;
-        padding-top: 22px;
-        padding-left: 10px;
-        font-size: 1.6em;
+        margin-right: 40px;
+        position: relative;
+    }
+    .g-item3 div {
+        border-right: 4px solid #0276c8;
+        border-radius: 5px;
+        height: 50px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
     }
     .g-item4 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        padding: 12px;
-        border: 1px solid #0276c8;
+        flex-grow: 1;
+        align-content: flex-end;
+        width: 150px;
     }
     .g-item5 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        border: 1px solid #0276c8;
+        flex-grow: 1;
+        text-align: center;
     }
     .book-button {
         margin-bottom: 20px;
@@ -334,6 +371,13 @@ input[type="number"] {
         color: #0276c8;
     }
 }
+.line-break {
+    width: 10%;
+    border: 4px solid #0276c8;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 .home-button {
     text-align: center;
     font-weight: bold;
@@ -356,10 +400,19 @@ input[type="number"] {
     border-radius: 5px;
 }
 /* Sign in section */
+.signin-form {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
 .signin-heading {
     text-align: center;
     color: white;
-    margin-top: 100px;
 }
 .signin-subtitle {
     text-align: center;
@@ -387,9 +440,11 @@ input[type="number"] {
 }
 .form-input-text {
     padding: 5px;
+    border-radius: 5px;
 }
 .form-input-select {
     padding: 5px;
+    border-radius: 5px;
 }
 .signin-submit {
     display: block;

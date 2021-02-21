@@ -27,10 +27,11 @@ $days = $_SESSION['days'];
             <div class="wrapper">
                 <div class="booking-comfirmation">
                     <!-- Bookings & Comparisons -->
-                    <h1 class="form-heading">Confirm Your Booking</h1>
+                    <h1 class="form-heading title-font">Confirm Your Booking</h1>
                     <p class="form-subtitle">We've found some options for you based on the selections made, see how other hotel rates compare.</p>
+                    <hr class="line-break">
                     <!-- Bookings Compare Section -->
-                    <h2 class="form-heading">Comparitive Bookings for <?php print($form_location); ?></h2>
+                    <h2 class="form-heading title-font">Comparitive Bookings for <?php print($form_location); ?></h2>
                     <?php $i = 1; do {$get_location = ${'hotel' . $i}->get_location(); if($form_location == $get_location) { ?>
                     <div class="primary-booking grid-container">
                         <div class="g-item1">
@@ -38,12 +39,10 @@ $days = $_SESSION['days'];
                             <p class="min-padding"><?php print(${'hotel' . $i}->get_name());?></p>
                         </div>
                         <div class="g-item2">
-                            <span class="min-padding">Days:</span>
-                            <span class="days"><?php print($days); ?></span>
+                            <span class="min-padding title-font">Days: <?php print($days); ?> <br><br> Rate: R<?php print(${'hotel' . $i}->get_rate());?> p/d</span>
                         </div>
                         <div class="g-item3">
-                            <span class="min-padding">Rate:</span>
-                            <span class="rate">R<?php print(${'hotel' . $i}->get_rate());?> p/d</span>
+                            <div></div>
                         </div>
                         <div class="g-item4">
                             <p class="min-padding title-font">Additional Info</p>
