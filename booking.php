@@ -19,7 +19,7 @@ $days = $_SESSION['days'];
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
         <link rel="stylesheet" href="includes/css/styles.css" >
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
         <script src="includes/js/scripts.js"></script>
     </head>
     <body class="body">
@@ -46,11 +46,11 @@ $days = $_SESSION['days'];
                             <span class="rate">R<?php print(${'hotel' . $i}->get_rate());?> p/d</span>
                         </div>
                         <div class="g-item4">
-                            <p class="min-padding"><u>Additional Info</u></p>
-                            <p class="min-padding"><?php $hotel_info = ${'hotel' . $i}->get_info(); foreach($hotel_info as $x){echo $x . ', ';} echo 'Restaurant';?></p>
+                            <p class="min-padding title-font">Additional Info</p>
+                            <ul class="min-padding"><?php $hotel_info = ${'hotel' . $i}->get_info(); foreach($hotel_info as $x){echo "<li>" . $x . '</li>';}?></ul>
                         </div>
                         <div class="g-item5">
-                            <p class="min-padding"><u>Total Amount</u></p>
+                            <p class="min-padding title-font">Total Amount</p>
                             <p class="total-amount">R<?php print(${'hotel' . $i}->get_rate()*$days);?></p>
                             <a href="mail.php?id=<?php print(${'hotel' . $i}->get_id());?>"><button class="book-button" onclick="confirm('Confirm booking?');">Book Now</button></a>
                         </div>

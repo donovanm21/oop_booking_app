@@ -1,8 +1,11 @@
 .body {
     background-image: url("../img/bg.jpg");
     background-size: cover;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
+}
+.title-font {
+    font-family: 'Merriweather', sans-serif;
 }
 .content {
     width: 100%;
@@ -110,8 +113,10 @@
     padding: 15px;
     width: 90%;
     border-radius: 5px;
+    color: white;
     border: 2px solid #0276c8;
     background-color: #0276c8;
+    -webkit-appearance: none;
 }
 .form-submit:hover {
     border: 2px solid white;
@@ -306,9 +311,9 @@ input[type="number"] {
     .book-button {
         margin-bottom: 20px;
         padding: 8px;
-        background-color: #0276c8;
+        background-color: #4CAF50;
         color: white;
-        border: 2px solid #0276c8;
+        border: 2px solid #4CAF50;
         border-radius: 5px;
     }
     .book-button:hover {
@@ -337,8 +342,13 @@ input[type="number"] {
     padding: 15px;
     width: 100%;
     border-radius: 5px;
+    color: white;
     border: 2px solid #0276c8;
     background-color: #0276c8;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 1
 }
 .home-button:hover {
     border: 2px solid white;
@@ -392,6 +402,10 @@ input[type="number"] {
     border: 2px solid #0276c8;
     background-color: #0276c8;
     color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity: 1
 }
 .signin-submit:hover {
     border: 2px solid white;
@@ -406,9 +420,9 @@ input[type="number"] {
     padding: 15px;
     width: 90%;
     border-radius: 5px;
-    color: black;
-    background-color: lightcoral;
-    border: 2px solid lightcoral;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
 }
 .logout-button:hover {
     border: 2px solid white;
@@ -426,9 +440,9 @@ input[type="number"] {
     padding: 15px;
     width: 100%;
     border-radius: 5px;
-    color: black;
-    background-color: lightcoral;
-    border: 2px solid lightcoral;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
 }
 .logout-button-booking:hover {
     border: 2px solid white;
