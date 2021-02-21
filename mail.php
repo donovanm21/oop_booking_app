@@ -132,7 +132,7 @@ if($_GET['id'] != null) {
     <body class="body">
         <div class="content">
             <div class="wrapper">
-                <div class="booking-comfirmation">
+                <div class="booking-thanks">
                     <!-- Thanks you -->
                     <h1 class="form-heading title-font">Thank You for booking with us</h1>
                     <!-- Refresh page in 10 seconds and reload index -->

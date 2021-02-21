@@ -26,7 +26,7 @@
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.2);
         margin: auto;
-        padding: 8px;
+        padding-top: 10px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -138,11 +138,11 @@ input[type="number"] {
     color: black;
 }
 .error-input {
-    border: 2px solid red;
+    border: 2px solid lightcoral;
 }
 .error-bubble {
-    color: red;
-    border: 1px solid red;
+    color: lightcoral;
+    border: 1px solid lightcoral;
     font-weight: bold;
     position: absolute;
     margin-left: 5%;
@@ -156,9 +156,9 @@ input[type="number"] {
     width: 0px;
     height: 0px;
     position: absolute;
-    border-left: 5px solid red;
+    border-left: 5px solid lightcoral;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid lightcoral;
     border-top: 5px solid transparent;
     top: -10px;
 }
@@ -166,7 +166,7 @@ input[type="number"] {
 /* Booking Confirmation and Compare */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .booking-comfirmation {
+    .booking-thanks {
         width: 100%;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.2);
@@ -180,7 +180,7 @@ input[type="number"] {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .booking-comfirmation {
+    .booking-thanks {
         width: 100%;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.2);
@@ -195,7 +195,7 @@ input[type="number"] {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .booking-comfirmation {
+    .booking-thanks {
         width: 90%;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.2);
@@ -210,7 +210,7 @@ input[type="number"] {
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .booking-comfirmation {
+    .booking-thanks {
         width: 90%;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.2);
@@ -225,7 +225,7 @@ input[type="number"] {
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .booking-comfirmation {
+    .booking-thanks {
         position: relative;
         width: 90%;
         border-radius: 5px;
@@ -363,12 +363,6 @@ input[type="number"] {
     }
     .total-amount {
         font-size: 1.2em;
-    }
-    .rate {
-        color: #0276c8;
-    }
-    .days {
-        color: #0276c8;
     }
 }
 .line-break {
