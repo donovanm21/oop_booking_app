@@ -19,10 +19,6 @@ $mail->setFrom('bookings@example.co.za', 'Hotel Bookings');
 $mail->addAddress('manager@example.co.za'); // Email address for receiving the booking cofirmation (Your email)
 ```
 
-## ToDo
-
-- AJAX in some way or form
-
 ## Sign In Window
 
 <img src="https://github.com/donovanm21/oop_booking_app/blob/main/includes/img/github/signin.png" />
