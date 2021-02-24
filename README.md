@@ -14,17 +14,19 @@ This application serves as a starting template for someone wanting to build ther
 
 ## Simple setup instructions (Docker)
 
-### 1. Install docker onto your machine using the link below.
+### 1. Install docker 
 
-https://www.docker.com/products/docker-desktop
+Select and install docker onto your machine or server using the link below.
+
+https://www.docker.com/products/
 
 ### 2. Ensure that you have git installed,
 
-On your machine, download and install git for your OS.
+On your machine or server, download and install git for your OS.
 
 https://git-scm.com/downloads
 
-### 3. Clone the repo to your machine, 
+### 3. Clone the repo to your machine or server, 
 
 This command will create a copy of all the code onto your machine.
 
@@ -42,7 +44,7 @@ On windows, open CMD and use the cd command to change to the oop_booking_app dir
 
 Using Terminal on Mac or CMD on Windows to run the below command.
 
-Ensuring you are in the cloned directory, you can run the below command to start a php docker container and serve the files from the folder on your machine.
+Ensuring you are in the cloned directory, you can run the below command to start a php docker container and serve the files from the folder on your machine or a server.
 
 ```bash
 docker run -d -p 8070:80 --name oop-booking-app -v "$PWD":/var/www/html php:7.2-apache
@@ -51,6 +53,8 @@ docker run -d -p 8070:80 --name oop-booking-app -v "$PWD":/var/www/html php:7.2-
 ### 6. Access the application
 
 If everything went well, you should be able to access the app using this link http://127.0.0.1:8070
+
+If you installed this on a server with direct internet access (Can browse to the server using the IP) you will access it with http://your-public-ip:8070
 
 ### 7. Adjusting the application code
 
