@@ -14,19 +14,19 @@ This application serves as a starting template for someone wanting to build ther
 
 ## Simple setup instructions (Docker)
 
-### 1. Install docker 
+## 1. Install docker 
 
 Select and install docker onto your machine or server using the link below.
 
 https://www.docker.com/products/
 
-### 2. Ensure that you have git installed,
+## 2. Ensure that you have git installed,
 
 On your machine or server, download and install git for your OS.
 
 https://git-scm.com/downloads
 
-### 3. Clone the repo to your machine or server, 
+## 3. Clone the repo to your machine or server, 
 
 This command will create a copy of all the code onto your machine.
 
@@ -34,13 +34,13 @@ This command will create a copy of all the code onto your machine.
 git clone https://github.com/donovanm21/oop_booking_app.git
 ```
 
-### 4. Ensure that you are in the folder you cloned above,
+## 4. Ensure that you are in the folder you cloned above,
 
 On mac, open terminal and use the cd command to change to the oop_booking_app directory. Type cd and drag the directory over the terminal.
 
 On windows, open CMD and use the cd command to change to the oop_booking_app directory. Type cd and drag the directory over the terminal.
 
-### 5. Once docker and git is installed and running, 
+## 5. Once docker and git is installed and running, 
 
 Using Terminal on Mac or CMD on Windows to run the below command.
 
@@ -50,17 +50,17 @@ Ensuring you are in the cloned directory, you can run the below command to start
 docker run -d -p 8070:80 --name oop-booking-app -v "$PWD":/var/www/html php:7.2-apache
 ```
 
-### 6. Access the application
+## 6. Access the application
 
 If everything went well, you should be able to access the app using this link http://127.0.0.1:8070
 
 If you installed this on a server with direct internet access (Can browse to the server using the IP) you will access it with http://your-public-ip:8070
 
-### 7. Adjusting the application code
+## 7. Adjusting the application code
 
 Any adjustments you make to the code should reflect on your local app running via the docker instance.
 
-### 8. Email settings
+## 8. Email settings
 
 Ensure you update the mail.php section with your own email settings in order to have the book email confirmation working.
 
