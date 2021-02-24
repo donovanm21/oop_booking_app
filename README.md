@@ -6,11 +6,11 @@ This application serves as a starting template for someone wanting to build ther
 
 ## Demo site below
 
-https://bookings-demo.ydev.co.za
+<a href="https://bookings-demo.ydev.co.za" target="_blank">https://bookings-demo.ydev.co.za</a>
 
 ## Welcome / Sign in Screen
 
-<img src="https://github.com/donovanm21/oop_booking_app/blob/main/includes/img/github/signin.png" />
+<iframe src="https://bookings-demo.ydev.co.za" title="Bookings Demo Site"></iframe>
 
 ## Simple setup instructions (Docker)
 
