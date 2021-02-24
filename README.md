@@ -18,11 +18,15 @@ This application serves as a starting template for someone wanting to build ther
 
 https://www.docker.com/products/docker-desktop
 
-### 2. Ensure that you have git installed on your machine. Download and install for your OS.
+### 2. Ensure that you have git installed,
+
+On your machine, download and install git for your OS.
 
 https://git-scm.com/downloads
 
-### 3. Clone the repo to your machine, this will create a copy of all the code onto your machine.
+### 3. Clone the repo to your machine, 
+
+This command will create a copy of all the code onto your machine.
 
 ```bash
 git clone https://github.com/donovanm21/oop_booking_app.git
@@ -31,9 +35,12 @@ git clone https://github.com/donovanm21/oop_booking_app.git
 ### 4. Ensure that you are in the folder you cloned above,
 
 On mac, open terminal and use the cd command to change to the oop_booking_app directory. Type cd and drag the directory over the terminal.
+
 On windows, open CMD and use the cd command to change to the oop_booking_app directory. Type cd and drag the directory over the terminal.
 
-### 5. Once docker and git is installed and running, you will use Terminal on Mac or CMD on Windows to run the below command.
+### 5. Once docker and git is installed and running, 
+
+Using Terminal on Mac or CMD on Windows to run the below command.
 
 Ensuring you are in the cloned directory, you can run the below command to start a php docker container and serve the files from the folder on your machine.
 
