@@ -10,7 +10,7 @@ This application serves as a starting template for someone wanting to build ther
 
 ## Welcome / Sign in Screen
 
-<iframe src="https://bookings-demo.ydev.co.za" title="Bookings Demo Site"></iframe>
+<img src="https://github.com/donovanm21/oop_booking_app/blob/main/includes/img/github/signin.png" />
 
 ## Simple setup instructions (Docker)
 
